@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timofey Rasulov</title>
+</head>
+<body>
+
+<div id="header">
+  <h123 style="font-size: 35px">Образование<h123>
+</div>
+
+<div class="hamburger-menu">
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+      <span></span>
+    </label>
+    <ul class="menu__box">
+      <li><a class="menu__item" href="index.html">Главная</a></li>
+      <li><a class="menu__item" href="obrazovanie.html">Образование</a></li>
+      <li><a class="menu__item" href="hobbi.html">Хобби</a></li>
+      <li><a class="menu__item" href="gallery.html">Галерея</a></li>
+      <li><a class="menu__item" href="contacts.html">Контакты</a></li>
+    </ul>
+  </div>
+  <br>
+ <br>
+ <br>
+<h1 class="H1" style="line-height:100%"><font class="dark" color="white"; face="font2">
+В МБОУ "Русская классическая школа №7" я пошёл в 2014 году, когда мне было 7 лет. Закончил 9 классов.
+После, в 2023 году, поступил на бюджет по специальности "Информационные системы и программирование" в ОГБПОУ "Рязанский колледж электроники". Обучаюсь здесь по настоящее время.
+    </font></h1>
+    <div class="aligncenter">
+    <img src="./img/img6.jpg" class="imgNorm"/>
+    </div>
+    
+  <style>
+ h123{
+ color: #ffffff;
+ font-family: font2;
+ margin-left: 100px;
+ 
+ }
+ 
+ #header{
+ height: 70px;
+ background-color: rgba(0, 0, 0, 0.8);
+ margin-bottom: 10px;
+ }
+ 
+ .aligncenter {
+ text-align: center;
+ }
+ 
+ .dark {
+ text-shadow: black 0 0 10px; /* Свечение красного цвета */
+ }
+ .white {
+ text-shadow: white 0 0 10px;
+ }
+ 
+ html {
+ min-height: 100%;
+ }
+ @font-face {
+ font-family: "font1"; 
+ src: url(./fonts/font1.ttf); 
+ }
+ 
+ @font-face {
+ font-family: "font2"; 
+ src: url(./fonts/font2.ttf); 
+ }
+ @font-face {
+ font-family: "font3"; 
+ src: url(./fonts/font3.ttf); 
+ }
+ 
+ #menu__toggle {
+ opacity: 0;
+ }
+ #menu__toggle:checked + .menu__btn > span {
+ transform: rotate(45deg);
+ }
+ #menu__toggle:checked + .menu__btn > span::before {
+ top: 0;
+ transform: rotate(0deg);
+ }
+ #menu__toggle:checked + .menu__btn > span::after {
+ top: 0;
+ transform: rotate(90deg);
+ }
+ #menu__toggle:checked ~ .menu__box {
+ left: 0 !important;
+ }
+ .menu__btn {
+ position: fixed;
+ top: 30px;
+ left: 30px;
+ width: 36px;
+ height: 36px;
+ cursor: pointer;
+ z-index: 1;
+ }
+ .menu__btn > span,
+ .menu__btn > span::before,
+ .menu__btn > span::after {
+ display: block;
+ position: absolute;
+ width: 100%;
+ height: 2px;
+ background-color: #ffffff;
+ transition-duration: .25s;
+ }
+ .menu__btn > span::before {
+ content: '';
+ top: -8px;
+ }
+ .menu__btn > span::after {
+ content: '';
+ top: 8px;
+ }
+ .menu__box {
+ display: block;
+ position: fixed;
+ top: 0;
+ left: -100%;
+ width: 300px;
+ height: 100%;
+ margin: 0;
+ padding: 80px 0;
+ list-style: none;
+ background-color: rgba(0, 0, 0, 0.8);
+ box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+ transition-duration: .25s;
+ }
+ .menu__item {
+ display: block;
+ padding: 12px 24px;
+ color: white ;
+ font-family: font2;
+ font-size: 30px;
+ font-weight: 600;
+ text-decoration: none;
+ transition-duration: .25s;
+ }
+ .menu__item:hover {
+ background-color: #CFD8DC;
+ }
+ body{
+ background-image: url("./img/fon1.gif");
+ background-size: cover;
+ background-repeat: no-repeat;
+ height: 160vh;
+ padding:0;
+ margin:0;
+ }
+ .textcols {
+ white-space: nowrap;
+ }
+ .textcols-item {
+ white-space: normal;	
+ display: inline-block;
+ width: 48%;
+ vertical-align: top;
+ background: ;
+ }
+ .textcols .textcols-item:first-child {
+ margin-right: 4%;
+ }
+ .H1{
+ padding-left: 60px;
+ padding-right: 60px;	
+ }
+ .imgNorm{
+ max-width: 70%;
+ }
+ .pFlex{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 5px;
+ }
+ .image-button1{
+ font-size: 50px;/* telegramm*/
+ background: #34aadf ; /* Серый цвет фона */
+ color: white; /* Белый цвет текста */
+ width: 200px ;
+ height: 200px ;
+ /* Поля вокруг текста */
+ text-decoration: none; /* Убираем подчёркивание */
+ border-radius: 5000px; /* Скругляем уголки */
+ border: none;
+ background-image: url("./img/img3.png");
+ background-size: cover;
+ }
+ .image-button2{
+ font-size: 50px;/*vkontakte*/
+ background: #0077ff; /* Серый цвет фона */
+ color: white; /* Белый цвет текста */
+ width: 200px ;
+ height: 200px ;
+ /* Поля вокруг текста */
+ text-decoration: none; /* Убираем подчёркивание */
+ border-radius: 50px; /* Скругляем уголки */
+ border: none;
+ background-image: url("./img/img4.png");
+ background-size: cover;
+ }
+ .image-button3{
+ font-size: 50px;/*youtube*/
+ background: red ; /* Серый цвет фона */
+ color: white; /* Белый цвет текста */
+ width: 290px ;
+ height: 200px ;
+ /* Поля вокруг текста */
+ text-decoration: none; /* Убираем подчёркивание */
+ border-radius: 50px; /* Скругляем уголки */
+ border: none;
+ background-image: url("./img/img5.png");
+ background-size: cover;
+ }
+ </style>
+ </body>
+ </html>
